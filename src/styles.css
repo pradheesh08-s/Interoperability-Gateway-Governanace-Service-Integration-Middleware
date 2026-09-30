@@ -2,20 +2,20 @@
 
 :root {
   font-family: "DM Sans", sans-serif;
-  color: #243034;
-  background: #f4f6f3;
+  color: #20364b;
+  background: #f3f6fa;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   font-smooth: always;
   font-weight: 400;
-  --ink: #243034;
-  --muted: #7c8989;
-  --line: #e7ebe7;
-  --green: #235d49;
-  --green-soft: #e6f1eb;
-  --surface: #fff;
-  --canvas: #f4f6f3;
-  --nav: #18382f;
+  --ink: #20364b;
+  --muted: #718095;
+  --line: #dce4ed;
+  --green: #173b5c;
+  --green-soft: #e7eff6;
+  --surface: #ffffff;
+  --canvas: #f3f6fa;
+  --nav: #102a43;
   --serif: Georgia, "Times New Roman", serif;
 }
 * {
@@ -38,7 +38,7 @@ button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 select:focus-visible {
-  outline: 3px solid #75b6a0;
+  outline: 3px solid #0a3fee;
   outline-offset: 2px;
 }
 button {
@@ -74,7 +74,7 @@ button {
   place-items: center;
   border-radius: 9px;
   color: #bfe6d2;
-  background: #2c604b;
+  background: #0a4bd8;
 }
 .brand-text {
   font-family: Manrope, sans-serif;
@@ -100,9 +100,9 @@ button {
   height: 58px;
   margin: 24px 0 26px;
   padding: 9px;
-  border: 1px solid #3b594d;
+  border: 1px solid #3007e7;
   border-radius: 7px;
-  background: #21453a;
+  background: #0c45e0;
   color: #e8f1ec;
   display: flex;
   align-items: center;
@@ -220,8 +220,8 @@ button {
 }
 .sidebar-health {
   padding: 13px 10px 12px;
-  border-top: 1px solid #355449;
-  border-bottom: 1px solid #355449;
+  border-top: 1px solid #080cec;
+  border-bottom: 1px solid #0e3fe0;
 }
 .sidebar-health > div {
   display: flex;
@@ -229,7 +229,7 @@ button {
   gap: 8px;
   font-size: 10px;
   font-weight: 600;
-  color: #deebe3;
+  color: #0d09e0;
 }
 .sidebar-health small {
   display: block;
@@ -2768,6 +2768,259 @@ td code {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* Dark-blue MahaSetu palette */
+:root {
+  --maha-ink: #20364b;
+  --maha-green: #173b5c;
+  --maha-muted: #718095;
+  --maha-line: #dce4ed;
+}
+body {
+  color: var(--ink);
+  background: var(--canvas);
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline-color: #5a8db8;
+}
+.sidebar,
+.citizen-sidebar {
+  background: #102a43;
+}
+.brand-icon,
+.citizen-sidebar .brand-mark {
+  color: #d9e9f6;
+  background: #214a6b;
+}
+.brand-text > span,
+.brand-light small,
+.brand-text small {
+  color: #b7ccdf;
+}
+.workspace-select {
+  border-color: #315573;
+  background: #183b59;
+}
+.nav-item:hover,
+.citizen-sidebar nav a:hover {
+  background: #1b405f;
+}
+.nav-item.active,
+.citizen-sidebar nav a.selected {
+  background: #244e70;
+  box-shadow: inset 2px 0 #a8c9e3;
+}
+.nav-count {
+  background: #315875;
+}
+.demo-tag {
+  color: #426a8c;
+  background: #edf3f8;
+  border-color: #dce6ef;
+}
+.button-primary,
+.maha-button.primary,
+.citizen-cta {
+  color: #fff;
+  background: #173b5c;
+}
+.button-primary:hover,
+.maha-button.primary:hover,
+.citizen-cta:hover {
+  background: #102a43;
+}
+.auth-page,
+.success-page,
+.citizen-shell {
+  background: #f3f6fa;
+}
+.auth-story {
+  background: #e8eff6;
+}
+.auth-story:before {
+  background: radial-gradient(ellipse at 84% 78%, #d6e4f0, transparent 39%);
+}
+.auth-page,
+.success-page,
+.citizen-shell {
+  background: #f3f6fa;
+}
+.auth-story {
+  background: #e8eff6;
+}
+.auth-story:before {
+  background: radial-gradient(ellipse at 84% 78%, #d6e4f0, transparent 39%);
+}
+.citizen-main {
+  background: #edf3f8;
+}
+.auth-page,
+.success-page,
+.citizen-shell {
+  background: #f3f6fa;
+}
+.auth-story {
+  background: #e8eff6;
+}
+.auth-story:before {
+  background: radial-gradient(ellipse at 84% 78%, #d6e4f0, transparent 39%);
+}
+.citizen-dashboard-content {
+  background: transparent;
+}
+.module-list,
+.profile-summary,
+.service-catalog article,
+.grievance-form,
+.empty-module {
+  background-color: #ffffff;
+}
+.text-button,
+.surface-footer-link,
+.table-check,
+.row-action,
+.citizen-data-note > svg:first-child,
+.citizen-step-list > span.is-done,
+.citizen-step-list > span.is-done > i {
+  color: #315f84;
+}
+.table-check,
+.row-action {
+  border-color: #d7e3ed;
+  background: #f2f7fb;
+}
+.table-check:hover,
+.row-action:hover {
+  border-color: #b9d0e3;
+  background: #e5eff7;
+}
+.maha-brand,
+.auth-story h1,
+.maha-hero h1,
+.band-heading h2,
+.citizen-banner h1 {
+  color: #183751;
+}
+.maha-brand > span:last-child,
+.maha-nav a:hover,
+.auth-header-right a:hover,
+.maha-login-link,
+.maha-hero h1 em,
+.auth-story h1 em,
+.band-heading h2 em,
+.hero-assurance svg,
+.hero-kicker,
+.service-node,
+.hero-core,
+.how-steps,
+.how-steps i {
+  color: #315f84;
+}
+.brand-mark,
+.hero-core,
+.service-node,
+.service-tiles article > span,
+.quick-action > i,
+.auth-large-icon,
+.profile-summary-icon,
+.dashboard-app-icon {
+  background-color: #e8f0f7;
+}
+.maha-login-link,
+.maha-button.outline,
+.service-node,
+.orbit,
+.orbit-inner,
+.hero-core,
+.citizen-id-chip {
+  border-color: #cbd9e6;
+}
+.maha-hero,
+.citizen-banner {
+  background-color: #e9f0f6;
+}
+.maha-hero:before,
+.citizen-banner:before {
+  background:
+    radial-gradient(ellipse at 80% 51%, #d7e5f0 0, transparent 40%),
+    linear-gradient(115deg, #edf3f8 4%, #e4edf5 100%);
+}
+.maha-footer {
+  background: #102a43;
+  color: #dbe7f1;
+}
+.maha-footer .brand-mark {
+  color: #d9e9f6;
+  background: #244e70;
+}
+.service-band,
+.maha-header,
+.auth-header,
+.citizen-topbar {
+  background-color: #fbfcfe;
+}
+.how-band {
+  background: #edf2f7;
+}
+.auth-page,
+.success-page,
+.citizen-shell {
+  background: #f3f6fa;
+}
+.auth-story,
+.form-aside {
+  background-color: #e8eff6;
+}
+.auth-story:before {
+  background: radial-gradient(ellipse at 84% 78%, #d6e4f0, transparent 39%);
+}
+.success-check,
+.id-card,
+.verified-mobile,
+.auth-success {
+  background-color: #eaf1f7;
+}
+.success-check,
+.auth-success,
+.verified-mobile > strong i {
+  color: #315f84;
+}
+.id-card {
+  border-color: #cbd9e6;
+  background-image: linear-gradient(125deg, #f0f5fa, #e4edf5);
+}
+.id-card-top,
+.id-card > strong,
+.citizen-id-chip strong {
+  color: #214b6d;
+}
+.citizen-id-chip,
+.citizen-dashboard-stats article,
+.citizen-dashboard-app,
+.quick-action,
+.profile-summary,
+.service-catalog article {
+  border-color: #dce5ed;
+}
+.citizen-id-chip button,
+.dashboard-section-heading > a,
+.citizen-dashboard-footer button,
+.service-catalog article > button {
+  color: #315f84;
+}
+.admin-module-metrics article > strong,
+.module-record-name {
+  color: #294e6d;
+}
+.info-strip,
+.citizen-data-note,
+.module-note {
+  border-color: #dce5ed;
+  background: #f4f7fa;
 }
 .primary-nav {
   flex: 1 1 0;
@@ -5312,4 +5565,47 @@ td code {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* Keep dark-blue theme overrides after all legacy component colors. */
+.sidebar,
+.citizen-sidebar {
+  background: #102a43;
+}
+.citizen-sidebar .brand-mark {
+  color: #d9e9f6;
+  background: #214a6b;
+}
+.citizen-sidebar nav a:hover {
+  background: #1b405f;
+}
+.citizen-sidebar nav a.selected {
+  background: #244e70;
+  box-shadow: inset 2px 0 #a8c9e3;
+}
+.brand-text > span,
+.brand-text small,
+.brand-light small {
+  color: #b7ccdf;
+}
+.button-primary,
+.maha-button.primary,
+.citizen-cta {
+  background: #173b5c;
+}
+.button-primary:hover,
+.maha-button.primary:hover,
+.citizen-cta:hover {
+  background: #102a43;
+}
+.auth-page,
+.success-page,
+.citizen-shell {
+  background: #f3f6fa;
+}
+.auth-story {
+  background: #e8eff6;
+}
+.auth-story:before {
+  background: radial-gradient(ellipse at 84% 78%, #d6e4f0, transparent 39%);
 }
