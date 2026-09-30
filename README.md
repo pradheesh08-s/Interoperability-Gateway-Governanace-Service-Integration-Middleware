@@ -1,5 +1,7 @@
 # MahaSetu
 
+## Interoperability-Gateway-Governanace-Service-Integration-Middleware
+
 A local hackathon demonstration of a unified public-services gateway. It combines a shared mobile-and-OTP authentication journey with a citizen portal and an operations workspace for connected services.
 
 ## Run locally
